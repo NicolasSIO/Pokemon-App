@@ -1,0 +1,22 @@
+<h1 class="center">Authentification au pokédex</h1>
+<div class="row">
+    <div class="col s12 m6 offset-m3">
+        <div class="card">
+            <div class="card-content">
+                <form (ngSubmit)="login()" class="form-group"[formGroup]="loginForm" >
+                    <div>
+                        <label for="login">Login</label>
+                        <input type="text" class="form-control" formControlName="username">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" formControlName="password">
+                    </div>
+                    <div class="section center">
+                        <button type="submit" class="waves-effect waves-light btn">Valider</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
